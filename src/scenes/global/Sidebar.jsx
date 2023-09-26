@@ -5,17 +5,15 @@ import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import CloudIcon from '@mui/icons-material/Cloud';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -89,7 +87,7 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          {!isCollapsed && (
+          {/* {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
@@ -114,7 +112,7 @@ const Sidebar = () => {
                 </Typography>
               </Box>
             </Box>
-          )}
+          )} */}
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
@@ -133,23 +131,30 @@ const Sidebar = () => {
               Data
             </Typography>
             <Item
-              title="Manage Team"
+              title="Energy Consumption"
               to="/team"
-              icon={<PeopleOutlinedIcon />}
+              icon={<ElectricBoltIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
+              title="Reports and Analytics"
               to="/contacts"
-              icon={<ContactsOutlinedIcon />}
+              icon={<AssessmentIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Invoices Balances"
+              title="Alerts and Notifications"
               to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
+              icon={<NotificationsIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Weather Data"
+              to="/invoices"
+              icon={<CloudIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -159,26 +164,26 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Pages
+              Energy Sub Metering
             </Typography>
             <Item
-              title="Profile Form"
+              title="Sub_metering_1"
               to="/form"
-              icon={<PersonOutlinedIcon />}
+              icon={<AssessmentIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Calendar"
+              title="Sub_metering_2"
               to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              icon={<AssessmentIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="FAQ Page"
+              title="Sub_metering_3"
               to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              icon={<AssessmentIcon />}
               selected={selected}
               setSelected={setSelected}
             />

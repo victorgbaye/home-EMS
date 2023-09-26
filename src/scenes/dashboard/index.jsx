@@ -12,6 +12,8 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import CurrencyPoundIcon from '@mui/icons-material/CurrencyPound';
+import CloudIcon from '@mui/icons-material/Cloud';
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -55,15 +57,15 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
+            title="Today"
+            subtitle="Energy Consumption"
             progress="0.75"
-            increase="+14%"
-            icon={
-              <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
+            increase="Saved +14%"
+            // icon={
+            //   <EmailIcon
+            //     sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+            //   />
+            // }
           />
         </Box>
         <Box
@@ -74,12 +76,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
-            progress="0.50"
+            title="1,673"
+            subtitle="Amount Saved"
+            progress="0.30"
             increase="+21%"
             icon={
-              <PointOfSaleIcon
+              <CurrencyPoundIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -93,18 +95,18 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
-            subtitle="New Clients"
+            title="24'C"
+            subtitle="Temperature"
             progress="0.30"
-            increase="+5%"
+            increase=""
             icon={
-              <PersonAddIcon
+              <CloudIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
           />
         </Box>
-        <Box
+        {/* <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
           display="flex"
@@ -122,7 +124,7 @@ const Dashboard = () => {
               />
             }
           />
-        </Box>
+        </Box> */}
 
         {/* ROW 2 */}
         <Box
@@ -143,7 +145,7 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                 Monthly total Consumption KWh
               </Typography>
               <Typography
                 variant="h3"
@@ -224,7 +226,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Meter 1
           </Typography>
           <Box
             display="flex"
@@ -240,42 +242,64 @@ const Dashboard = () => {
             >
               $48,352 revenue generated
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>dishwasher, oven and microwave</Typography>
           </Box>
         </Box>
         <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
+          p="30px"
         >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ padding: "30px 30px 0 30px" }}
-          >
-            Sales Quantity
+          <Typography variant="h5" fontWeight="600">
+            Meter 2
           </Typography>
-          <Box height="250px" mt="-20px">
-            <BarChart isDashboard={true} />
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="25px"
+          >
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              $48,352 revenue generated
+            </Typography>
+            <Typography>washing-machine, tumble-drier, refrigerator and a light.
+
+</Typography>
           </Box>
         </Box>
         <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
-          padding="30px"
+          p="30px"
         >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ marginBottom: "15px" }}
-          >
-            Geography Based Traffic
+          <Typography variant="h5" fontWeight="600">
+            Meter 3
           </Typography>
-          <Box height="200px">
-            <GeographyChart isDashboard={true} />
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="25px"
+          >
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              $48,352 revenue generated
+            </Typography>
+            <Typography>electric water-heater and air-conditioner.</Typography>
           </Box>
         </Box>
+     
       </Box>
     </Box>
   );
