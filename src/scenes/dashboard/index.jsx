@@ -152,7 +152,7 @@ const Dashboard = () => {
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                250KWh
               </Typography>
             </Box>
             <Box>
@@ -182,7 +182,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Recent energy data
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
