@@ -436,19 +436,19 @@ export const mockLineData = [
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: "100",
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "200",
         y: 75,
       },
       {
-        x: "boat",
+        x: "300",
         y: 36,
       },
       {
-        x: "train",
+        x: "400",
         y: 216,
       },
       {
@@ -490,51 +490,51 @@ export const mockLineData = [
     color: tokens("dark").blueAccent[300],
     data: [
       {
-        x: "plane",
+        x: "100",
         y: 212,
       },
       {
-        x: "helicopter",
+        x: "150",
         y: 190,
       },
       {
-        x: "boat",
+        x: "200",
         y: 270,
       },
       {
-        x: "train",
+        x: "250",
         y: 9,
       },
       {
-        x: "subway",
+        x: "300",
         y: 75,
       },
       {
-        x: "bus",
+        x: "350",
         y: 175,
       },
       {
-        x: "car",
+        x: "400",
         y: 33,
       },
       {
-        x: "moto",
+        x: "450",
         y: 189,
       },
       {
-        x: "bicycle",
+        x: "500",
         y: 97,
       },
       {
-        x: "horse",
+        x: "550",
         y: 87,
       },
       {
-        x: "skateboard",
+        x: "600",
         y: 299,
       },
       {
-        x: "others",
+        x: "650",
         y: 251,
       },
     ],
@@ -544,51 +544,51 @@ export const mockLineData = [
     color: tokens("dark").redAccent[200],
     data: [
       {
-        x: "plane",
+        x: "100",
         y: 191,
       },
       {
-        x: "helicopter",
+        x: "200",
         y: 136,
       },
       {
-        x: "boat",
+        x: "300",
         y: 91,
       },
       {
-        x: "train",
+        x: "400",
         y: 190,
       },
       {
-        x: "subway",
+        x: "500",
         y: 211,
       },
       {
-        x: "bus",
+        x: "600",
         y: 152,
       },
       {
-        x: "car",
+        x: "700",
         y: 189,
       },
       {
-        x: "moto",
+        x: "800",
         y: 152,
       },
       {
-        x: "bicycle",
+        x: "900",
         y: 8,
       },
       {
-        x: "horse",
+        x: "950",
         y: 197,
       },
       {
-        x: "skateboard",
+        x: "1000",
         y: 107,
       },
       {
-        x: "others",
+        x: "...",
         y: 170,
       },
     ],
